@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/08/22/Phpstorm Xdebug Web程序调试/index.html">
 <meta property="og:site_name" content="Shy's Blog">
 <meta property="og:description" content="平时调试php程序的时候，可以通过在代码中添加var_dump等函数来实现简单的断点调试。下面介绍另一种方法，通过Phpstorm和Xdebug来进行调试。">
-<meta property="og:updated_time" content="2016-08-23T03:22:08.182Z">
+<meta property="og:updated_time" content="2016-08-23T07:44:00.269Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Phpstorm Xdebug Web程序调试">
 <meta name="twitter:description" content="平时调试php程序的时候，可以通过在代码中添加var_dump等函数来实现简单的断点调试。下面介绍另一种方法，通过Phpstorm和Xdebug来进行调试。">
@@ -285,7 +285,7 @@
 <h4 id="启用客户端调试器"><a href="#启用客户端调试器" class="headerlink" title="启用客户端调试器"></a>启用客户端调试器</h4><p>在php.ini中[Xdebug]下添加一行如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[xdebug]</div><div class="line">xdebug.remote_enable = 1</div></pre></td></tr></table></figure></p>
 <p>具体请参考<a href="https://xdebug.org/docs/remote" target="_blank" rel="external">这里</a></p>
 <h4 id="激活调试器"><a href="#激活调试器" class="headerlink" title="激活调试器"></a>激活调试器</h4><p>这里选择安装浏览器插件的方法，适用于通过web方式运行的php脚本。<br>我的浏览器是chrome，对应的插件是Xdebug Helper。<br>安装好后在选项里设置IDE key选择PhpStorm。</p>
-<h4 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h4><p>在phpstorm对应的文件中设置好断点。<br>开启监听，在菜单 -&gt; run -&gt; Start Listening for PHP Debug Connections。<br>接着在浏览器打开对应的页面，注意右上角Xdebug helper插件小图标的状态是否为开启，如果顺利的话，phpstorm下方就会弹出调试信息的面板了！</p>
+<h4 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h4><p>在phpstorm对应的文件中设置好断点。<br>开启监听，在菜单 -&gt; run -&gt; Start Listening for PHP Debug Connections。<br>接着在浏览器打开对应的页面，注意右上角Xdebug helper插件小图标的状态是否为开启，如果顺利的话，phpstorm下方就会弹出调试信息的面板了！（如果是第一次配置，会出现一个来自xdebug的连接配置提示，直接点击接受即可）</p>
 <h4 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h4><p>本文介绍的方法主要通过结合浏览器插件来实现，比较方便简单，其他更多相关内容还请参考Xdebug和PHPstorm的官方文档。</p>
 
       
