@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="一、github pages搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 github pages。">
+<meta name="description" content="平时调试php程序的时候，可以通过在代码中添加var_dump等函数来实现简单的断点调试。下面介绍另一种方法，通过Phpstorm和Xdebug来进行调试。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows下github pages + hexo next 搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2016/08/10/github-pages-hexo-next-搭建个人博客/index.html">
+<meta property="og:title" content="Phpstorm Xdebug Web程序调试">
+<meta property="og:url" content="http://yoursite.com/2016/08/22/Phpstorm Xdebug Web程序调试/index.html">
 <meta property="og:site_name" content="Shy's Blog">
-<meta property="og:description" content="一、github pages搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 github pages。">
-<meta property="og:updated_time" content="2016-08-12T01:26:07.285Z">
+<meta property="og:description" content="平时调试php程序的时候，可以通过在代码中添加var_dump等函数来实现简单的断点调试。下面介绍另一种方法，通过Phpstorm和Xdebug来进行调试。">
+<meta property="og:updated_time" content="2016-08-23T03:22:08.182Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows下github pages + hexo next 搭建个人博客">
-<meta name="twitter:description" content="一、github pages搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 github pages。">
+<meta name="twitter:title" content="Phpstorm Xdebug Web程序调试">
+<meta name="twitter:description" content="平时调试php程序的时候，可以通过在代码中添加var_dump等函数来实现简单的断点调试。下面介绍另一种方法，通过Phpstorm和Xdebug来进行调试。">
 
 
 
@@ -111,7 +111,7 @@
   };
 </script>
 
-  <title> windows下github pages + hexo next 搭建个人博客 | Shy's Blog </title>
+  <title> Phpstorm Xdebug Web程序调试 | Shy's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -231,7 +231,7 @@
             
             
               
-                windows下github pages + hexo next 搭建个人博客
+                Phpstorm Xdebug Web程序调试
               
             
           </h1>
@@ -243,8 +243,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-10T11:37:24+08:00" content="2016-08-10">
-              2016-08-10
+            <time itemprop="dateCreated" datetime="2016-08-22T14:12:25+08:00" content="2016-08-22">
+              2016-08-22
             </time>
           </span>
 
@@ -254,8 +254,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/10/github-pages-hexo-next-搭建个人博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/10/github-pages-hexo-next-搭建个人博客/" itemprop="commentsCount"></span>
+                <a href="/2016/08/22/Phpstorm Xdebug Web程序调试/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/22/Phpstorm Xdebug Web程序调试/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -278,59 +278,15 @@
       
 
       
-        <h3 id="一、github-pages"><a href="#一、github-pages" class="headerlink" title="一、github pages"></a>一、github pages</h3><p>搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 <a href="https://pages.github.com/" target="_blank" rel="external">github pages</a>。<a id="more"></a></p>
-<h3 id="二、Hexo"><a href="#二、Hexo" class="headerlink" title="二、Hexo"></a>二、Hexo</h3><p>一个静态博客生成框架工具，基于node.js开发。</p>
-<ol>
-<li>安装nodejs，<a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载地址</a>。</li>
-<li><p>安装hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
-</li>
-<li><p>新建</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-</li>
-<li><p>启动</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>查看效果<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
-</li>
-</ol>
-<h3 id="三、Next主题"><a href="#三、Next主题" class="headerlink" title="三、Next主题"></a>三、Next主题</h3><p>一款简洁易用的hexo主题。</p>
-<ol>
-<li><p>下载安装主题</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-</li>
-<li><p>启用主题<br>打开站点配置文件（folder目录下_config.yml），找到theme字段，并将其值更改为next，重启之后查看效果。</p>
-</li>
-</ol>
-<h3 id="四、配置ssh-key-连接-github"><a href="#四、配置ssh-key-连接-github" class="headerlink" title="四、配置ssh key 连接 github"></a>四、配置ssh key 连接 github</h3><ol>
-<li>安装git<br><a href="https://git-scm.com/download" target="_blank" rel="external">下载地址</a></li>
-<li><p>生成密钥<br>在git-bash中输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen  -t rsa –C <span class="string">"youremail@example.com"</span></div></pre></td></tr></table></figure>
-<p>以rsa方式加密生成公钥id_rsa.pub私钥id_rsa</p>
-</li>
-<li>添加密钥至github<br>将之前生成的is_rsa.pub中的内容添加至：<br>github -&gt; shyboy1239. github.io -&gt; settings -&gt; deploy keys -&gt; add deploy key</li>
-<li><p>连接测试</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
-</li>
-<li><p>存在多个ssh时需添加、配置config文件（可选）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Host github.com</div><div class="line">  HostName github.com</div><div class="line">  PreferredAuthentications publickey</div><div class="line">  IdentityFile ~/.ssh/id_rsa</div><div class="line">Host githubpages.com</div><div class="line">  HostName github.com</div><div class="line">  PreferredAuthentications publickey</div><div class="line">  IdentityFile ~/.ssh/id_rsa2</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="五、部署至github"><a href="#五、部署至github" class="headerlink" title="五、部署至github"></a>五、部署至github</h3><ol>
-<li><p>安装hexo-deployer-git</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>配置deploy<br>打开站点配置文件（folder目录下_config.yml）,找到deploy字段，设置如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@githubpages.com:shyboy1239/shyboy1239.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p><em>备注：因为本地存在多个ssh key,githubpages.com是之前为了进行区分而配置的别名</em></p>
-</li>
-<li><p>生成</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-</li>
-<li><p>部署</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="六、结语"><a href="#六、结语" class="headerlink" title="六、结语"></a>六、结语</h3><p>最后，一个基本的个人博客就搭建好了！~</p>
+        <p>平时调试php程序的时候，可以通过在代码中添加var_dump等函数来实现简单的断点调试。<br>下面介绍另一种方法，通过Phpstorm和Xdebug来进行调试。<a id="more"></a></p>
+<h4 id="下载Xdebug"><a href="#下载Xdebug" class="headerlink" title="下载Xdebug"></a>下载Xdebug</h4><p>这个是官网<a href="https://xdebug.org/download.php" target="_blank" rel="external">下载地址</a>，下载你需要的版本。<br>如果不清楚的话可以使用这个<a href="https://xdebug.org/wizard.php" target="_blank" rel="external">工具</a>，只要粘贴提交你phpinfo()信息，就会返回适合你的版本以及简单的安装说明。</p>
+<h4 id="安装Xdebug"><a href="#安装Xdebug" class="headerlink" title="安装Xdebug"></a>安装Xdebug</h4><p>移动下载好的xdebug扩展文件至对应目录并编辑php.ini文件，添加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">zend_extension=&quot;你的xdebug扩展文件路径&quot;</div></pre></td></tr></table></figure></p>
+<p>具体请参考<a href="https://xdebug.org/docs/install" target="_blank" rel="external">这里</a></p>
+<h4 id="启用客户端调试器"><a href="#启用客户端调试器" class="headerlink" title="启用客户端调试器"></a>启用客户端调试器</h4><p>在php.ini中[Xdebug]下添加一行如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[xdebug]</div><div class="line">xdebug.remote_enable = 1</div></pre></td></tr></table></figure></p>
+<p>具体请参考<a href="https://xdebug.org/docs/remote" target="_blank" rel="external">这里</a></p>
+<h4 id="激活调试器"><a href="#激活调试器" class="headerlink" title="激活调试器"></a>激活调试器</h4><p>这里选择安装浏览器插件的方法，适用于通过web方式运行的php脚本。<br>我的浏览器是chrome，对应的插件是Xdebug Helper。<br>安装好后在选项里设置IDE key选择PhpStorm。</p>
+<h4 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h4><p>在phpstorm对应的文件中设置好断点。<br>开启监听，在菜单 -&gt; run -&gt; Start Listening for PHP Debug Connections。<br>接着在浏览器打开对应的页面，注意右上角Xdebug helper插件小图标的状态是否为开启，如果顺利的话，phpstorm下方就会弹出调试信息的面板了！</p>
+<h4 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h4><p>本文介绍的方法主要通过结合浏览器插件来实现，比较方便简单，其他更多相关内容还请参考Xdebug和PHPstorm的官方文档。</p>
 
       
     </div>
@@ -350,24 +306,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/17/Yii2-CSRF/" rel="next" title="Yii2 CSRF">
+                <i class="fa fa-chevron-left"></i> Yii2 CSRF
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/16/phpstorm实用功能快捷键/" rel="prev" title="phpstorm实用功能快捷键">
-                phpstorm实用功能快捷键 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -393,8 +343,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/10/github-pages-hexo-next-搭建个人博客/"
-           data-title="windows下github pages + hexo next 搭建个人博客" data-url="http://yoursite.com/2016/08/10/github-pages-hexo-next-搭建个人博客/">
+      <div class="ds-thread" data-thread-key="2016/08/22/Phpstorm Xdebug Web程序调试/"
+           data-title="Phpstorm Xdebug Web程序调试" data-url="http://yoursite.com/2016/08/22/Phpstorm Xdebug Web程序调试/">
       </div>
     
   </div>
@@ -478,7 +428,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、github-pages"><span class="nav-number">1.</span> <span class="nav-text">一、github pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、Hexo"><span class="nav-number">2.</span> <span class="nav-text">二、Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、Next主题"><span class="nav-number">3.</span> <span class="nav-text">三、Next主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、配置ssh-key-连接-github"><span class="nav-number">4.</span> <span class="nav-text">四、配置ssh key 连接 github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、部署至github"><span class="nav-number">5.</span> <span class="nav-text">五、部署至github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、结语"><span class="nav-number">6.</span> <span class="nav-text">六、结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载Xdebug"><span class="nav-number">1.</span> <span class="nav-text">下载Xdebug</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Xdebug"><span class="nav-number">2.</span> <span class="nav-text">安装Xdebug</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启用客户端调试器"><span class="nav-number">3.</span> <span class="nav-text">启用客户端调试器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#激活调试器"><span class="nav-number">4.</span> <span class="nav-text">激活调试器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#调试"><span class="nav-number">5.</span> <span class="nav-text">调试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结语"><span class="nav-number">6.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
           </div>
         </section>
