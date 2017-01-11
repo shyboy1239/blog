@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,25 @@
 
 
 
-<meta name="description" content="一、github pages搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 github pages。">
+<meta name="description" content="SQL语句种类
+DDL（Data Definition Language，数据定义语言）包含指令有：CREATE、DROP、ALTER
+DML（Data Manipulation Language，数据操作语言）包含指令有：SELECT、INSERT、UPDATE、DELETE
+DCL（Data Control Language，数据控制语言）包含指令有：COMMIT、ROLLBACK、GRANT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows下github pages + hexo next 搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2016/08/10/github-pages-hexo-next-搭建个人博客/index.html">
+<meta property="og:title" content="SQL基础">
+<meta property="og:url" content="http://yoursite.com/2016/10/12/SQL基础/index.html">
 <meta property="og:site_name" content="Shy's Blog">
-<meta property="og:description" content="一、github pages搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 github pages。">
-<meta property="og:updated_time" content="2016-08-12T01:26:07.285Z">
+<meta property="og:description" content="SQL语句种类
+DDL（Data Definition Language，数据定义语言）包含指令有：CREATE、DROP、ALTER
+DML（Data Manipulation Language，数据操作语言）包含指令有：SELECT、INSERT、UPDATE、DELETE
+DCL（Data Control Language，数据控制语言）包含指令有：COMMIT、ROLLBACK、GRANT">
+<meta property="og:updated_time" content="2016-11-02T03:59:00.386Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows下github pages + hexo next 搭建个人博客">
-<meta name="twitter:description" content="一、github pages搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 github pages。">
+<meta name="twitter:title" content="SQL基础">
+<meta name="twitter:description" content="SQL语句种类
+DDL（Data Definition Language，数据定义语言）包含指令有：CREATE、DROP、ALTER
+DML（Data Manipulation Language，数据操作语言）包含指令有：SELECT、INSERT、UPDATE、DELETE
+DCL（Data Control Language，数据控制语言）包含指令有：COMMIT、ROLLBACK、GRANT">
 
 
 
@@ -111,7 +120,7 @@
   };
 </script>
 
-  <title> windows下github pages + hexo next 搭建个人博客 | Shy's Blog </title>
+  <title> SQL基础 | Shy's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -231,7 +240,7 @@
             
             
               
-                windows下github pages + hexo next 搭建个人博客
+                SQL基础
               
             
           </h1>
@@ -243,8 +252,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-10T11:37:24+08:00" content="2016-08-10">
-              2016-08-10
+            <time itemprop="dateCreated" datetime="2016-10-12T11:31:38+08:00" content="2016-10-12">
+              2016-10-12
             </time>
           </span>
 
@@ -254,8 +263,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/10/github-pages-hexo-next-搭建个人博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/10/github-pages-hexo-next-搭建个人博客/" itemprop="commentsCount"></span>
+                <a href="/2016/10/12/SQL基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/12/SQL基础/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -278,59 +287,26 @@
       
 
       
-        <h3 id="一、github-pages"><a href="#一、github-pages" class="headerlink" title="一、github pages"></a>一、github pages</h3><p>搭建个人博客一般需要购买域名和空间，github pages为我们提供了这两样东西，而且是免费的，相关介绍和使用方法参考这里 <a href="https://pages.github.com/" target="_blank" rel="external">github pages</a>。<a id="more"></a></p>
-<h3 id="二、Hexo"><a href="#二、Hexo" class="headerlink" title="二、Hexo"></a>二、Hexo</h3><p>一个静态博客生成框架工具，基于node.js开发。</p>
-<ol>
-<li>安装nodejs，<a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载地址</a>。</li>
-<li><p>安装hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
+        <h4 id="SQL语句种类"><a href="#SQL语句种类" class="headerlink" title="SQL语句种类"></a>SQL语句种类</h4><ol>
+<li>DDL（Data Definition Language，数据定义语言）<br>包含指令有：CREATE、DROP、ALTER</li>
+<li>DML（Data Manipulation Language，数据操作语言）<br>包含指令有：SELECT、INSERT、UPDATE、DELETE</li>
+<li>DCL（Data Control Language，数据控制语言）<br>包含指令有：COMMIT、ROLLBACK、GRANT、REVOKE</li>
+</ol>
+<h4 id="数据库的创建"><a href="#数据库的创建" class="headerlink" title="数据库的创建"></a>数据库的创建</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> &lt;数据库名称&gt;</div></pre></td></tr></table></figure>
+<h4 id="表的创建"><a href="#表的创建" class="headerlink" title="表的创建"></a>表的创建</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &lt;表名&gt; (</div><div class="line">&lt;列名<span class="number">1</span>&gt; &lt;数据类型&gt; &lt;该列所需约束&gt;,</div><div class="line">&lt;列名<span class="number">2</span>&gt; &lt;数据类型&gt; &lt;该列所需约束&gt;,</div><div class="line">...</div><div class="line">...</div><div class="line">&lt;该表约束<span class="number">1</span>&gt;,&lt;该表约束<span class="number">2</span>&gt;,...);</div></pre></td></tr></table></figure>
+<h4 id="表的删除"><a href="#表的删除" class="headerlink" title="表的删除"></a>表的删除</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> &lt;表名&gt;</div></pre></td></tr></table></figure>
+<h4 id="表定义的更新"><a href="#表定义的更新" class="headerlink" title="表定义的更新"></a>表定义的更新</h4><ol>
+<li><p>添加列</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> &lt;表名&gt; <span class="keyword">ADD</span> <span class="keyword">COLUMN</span> &lt;列的定义&gt;</div></pre></td></tr></table></figure>
 </li>
-<li><p>新建</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-</li>
-<li><p>启动</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>查看效果<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<li><p>删除列</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> &lt;表名&gt; <span class="keyword">DROP</span> <span class="keyword">COLUMN</span> &lt;列名&gt;</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="三、Next主题"><a href="#三、Next主题" class="headerlink" title="三、Next主题"></a>三、Next主题</h3><p>一款简洁易用的hexo主题。</p>
-<ol>
-<li><p>下载安装主题</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-</li>
-<li><p>启用主题<br>打开站点配置文件（folder目录下_config.yml），找到theme字段，并将其值更改为next，重启之后查看效果。</p>
-</li>
-</ol>
-<h3 id="四、配置ssh-key-连接-github"><a href="#四、配置ssh-key-连接-github" class="headerlink" title="四、配置ssh key 连接 github"></a>四、配置ssh key 连接 github</h3><ol>
-<li>安装git<br><a href="https://git-scm.com/download" target="_blank" rel="external">下载地址</a></li>
-<li><p>生成密钥<br>在git-bash中输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen  -t rsa –C <span class="string">"youremail@example.com"</span></div></pre></td></tr></table></figure>
-<p>以rsa方式加密生成公钥id_rsa.pub私钥id_rsa</p>
-</li>
-<li>添加密钥至github<br>将之前生成的is_rsa.pub中的内容添加至：<br>github -&gt; shyboy1239. github.io -&gt; settings -&gt; deploy keys -&gt; add deploy key</li>
-<li><p>连接测试</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
-</li>
-<li><p>存在多个ssh时需添加、配置config文件（可选）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Host github.com</div><div class="line">  HostName github.com</div><div class="line">  PreferredAuthentications publickey</div><div class="line">  IdentityFile ~/.ssh/id_rsa</div><div class="line">Host githubpages.com</div><div class="line">  HostName github.com</div><div class="line">  PreferredAuthentications publickey</div><div class="line">  IdentityFile ~/.ssh/id_rsa2</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="五、部署至github"><a href="#五、部署至github" class="headerlink" title="五、部署至github"></a>五、部署至github</h3><ol>
-<li><p>安装hexo-deployer-git</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>配置deploy<br>打开站点配置文件（folder目录下_config.yml）,找到deploy字段，设置如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@githubpages.com:shyboy1239/shyboy1239.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p><em>备注：因为本地存在多个ssh key,githubpages.com是之前为了进行区分而配置的别名</em></p>
-</li>
-<li><p>生成</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-</li>
-<li><p>部署</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="六、结语"><a href="#六、结语" class="headerlink" title="六、结语"></a>六、结语</h3><p>最后，一个基本的个人博客就搭建好了！~</p>
+<h4 id="SELECT"><a href="#SELECT" class="headerlink" title="SELECT"></a>SELECT</h4><h4 id="INSERT"><a href="#INSERT" class="headerlink" title="INSERT"></a>INSERT</h4><p>1.从其它表复制数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INSERT INTO &lt;表名&gt; (&lt;列名1&gt;,&lt;列名2&gt;,...) SELECT语句</div></pre></td></tr></table></figure></p>
+<h4 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h4><p>1.删除数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">DELETE FROM &lt;表名&gt;</div></pre></td></tr></table></figure></p>
+<h4 id="UPDATE"><a href="#UPDATE" class="headerlink" title="UPDATE"></a>UPDATE</h4><h4 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">开始语句(MYSQL:START TRANSACTION);</div><div class="line">DML语句;</div><div class="line">    .</div><div class="line">    .</div><div class="line">    .</div><div class="line">结束语句(COMMIT或者ROLLBACK);</div></pre></td></tr></table></figure>
+<h4 id="ACID"><a href="#ACID" class="headerlink" title="ACID"></a>ACID</h4><p>原子性、一致性、隔离性、持久性</p>
 
       
     </div>
@@ -350,24 +326,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/24/windows下Yii2使用redis/" rel="next" title="windows下Yii2使用redis">
+                <i class="fa fa-chevron-left"></i> windows下Yii2使用redis
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/16/phpstorm实用功能快捷键/" rel="prev" title="phpstorm实用功能快捷键">
-                phpstorm实用功能快捷键 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -393,8 +363,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/10/github-pages-hexo-next-搭建个人博客/"
-           data-title="windows下github pages + hexo next 搭建个人博客" data-url="http://yoursite.com/2016/08/10/github-pages-hexo-next-搭建个人博客/">
+      <div class="ds-thread" data-thread-key="2016/10/12/SQL基础/"
+           data-title="SQL基础" data-url="http://yoursite.com/2016/10/12/SQL基础/">
       </div>
     
   </div>
@@ -478,7 +448,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、github-pages"><span class="nav-number">1.</span> <span class="nav-text">一、github pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、Hexo"><span class="nav-number">2.</span> <span class="nav-text">二、Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、Next主题"><span class="nav-number">3.</span> <span class="nav-text">三、Next主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、配置ssh-key-连接-github"><span class="nav-number">4.</span> <span class="nav-text">四、配置ssh key 连接 github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、部署至github"><span class="nav-number">5.</span> <span class="nav-text">五、部署至github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、结语"><span class="nav-number">6.</span> <span class="nav-text">六、结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL语句种类"><span class="nav-number">1.</span> <span class="nav-text">SQL语句种类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库的创建"><span class="nav-number">2.</span> <span class="nav-text">数据库的创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表的创建"><span class="nav-number">3.</span> <span class="nav-text">表的创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表的删除"><span class="nav-number">4.</span> <span class="nav-text">表的删除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表定义的更新"><span class="nav-number">5.</span> <span class="nav-text">表定义的更新</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SELECT"><span class="nav-number">6.</span> <span class="nav-text">SELECT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#INSERT"><span class="nav-number">7.</span> <span class="nav-text">INSERT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DELETE"><span class="nav-number">8.</span> <span class="nav-text">DELETE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UPDATE"><span class="nav-number">9.</span> <span class="nav-text">UPDATE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事务"><span class="nav-number">10.</span> <span class="nav-text">事务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ACID"><span class="nav-number">11.</span> <span class="nav-text">ACID</span></a></li></ol></div>
             
           </div>
         </section>
